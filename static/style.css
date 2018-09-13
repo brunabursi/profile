@@ -10,15 +10,69 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #383838;
   background-color: #f8f8f8;
+  margin: 0;
 }
 
-a {
-  color: #7b9d6f;
-  text-decoration: none;
+header{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 110px;
+  padding: 20px 0 0;
 }
+
+.icon{
+  height: 50px;
+  width: 200px;
+}
+
+header div{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+header div a {
+  color: rosybrown;
+  text-decoration: none;
+  font-size: 20px;
+} 
+
+header div a:hover{
+  color: black;
+}
+
+.about{
+  background-color: rosybrown;
+  padding: 10px;
+  display: flex;
+}
+
+.perfil{   
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.new{
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.new h1{
+  text-align: right;
+  font-size: 1.5em;
+  width: 100%  
+}
+
+
 
 /* -------------------------------- 
 
@@ -67,18 +121,18 @@ Main Components
 .cd-horizontal-timeline .events-wrapper::before {
   left: 0;
   background-image: -webkit-linear-gradient(
-    left,
-    #f8f8f8,
-    rgba(248, 248, 248, 0)
+  left,
+  #f8f8f8,
+  rgba(248, 248, 248, 0)
   );
   background-image: linear-gradient(to right, #f8f8f8, rgba(248, 248, 248, 0));
 }
 .cd-horizontal-timeline .events-wrapper::after {
   right: 0;
   background-image: -webkit-linear-gradient(
-    right,
-    #f8f8f8,
-    rgba(248, 248, 248, 0)
+  right,
+  #f8f8f8,
+  rgba(248, 248, 248, 0)
   );
   background-image: linear-gradient(to left, #f8f8f8, rgba(248, 248, 248, 0));
 }
