@@ -51,6 +51,11 @@ header div a:hover{
   background-color: rosybrown;
   padding: 10px;
   display: flex;
+  justify-content: space-evenly;
+}
+
+.about div{
+  width: 900px;
 }
 
 .perfil{   
@@ -63,16 +68,17 @@ header div a:hover{
   padding: 10px;
   background-color: white;
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.new h1{
-  text-align: right;
-  font-size: 1.5em;
-  width: 100%  
+.new div{
+  width: 900px;
 }
 
-
+.new span{
+  height: 200px;
+  width: 200px;
+}
 
 /* -------------------------------- 
 
