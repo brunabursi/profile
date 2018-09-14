@@ -37,6 +37,11 @@ header div{
   width: 100%;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
 header div a {
   color: rosybrown;
   text-decoration: none;
