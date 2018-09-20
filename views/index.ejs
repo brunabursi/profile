@@ -4,50 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link type="text/css" rel="stylesheet" href="/static/style.css">
-    <script defer src="/static/Timeline.js"></script>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <script src="/static/script.js"></script>
+    <link rel="stylesheet" href="/static/timelineStyle.css">
+    <link type="text/css" rel="stylesheet" href="/static/style.css">
+    <link rel="shortcut icon" href="/static/img/icon.png" type="image/x-icon">
     <title>Bruna Bursi</title>
 </head>
 
 <body>
     <header>
-        <img src="/static/img/icon.png" alt="Nome" class="icon">
-        <div>
-            <a href="">Timeline</a>
-            <a href="/contact">Contacts</a>
-            <a  target="_blank" href="https://www.linkedin.com/in/brunabursi/">Linkedin</a>        
+        <h1 id="icon">Bruna Bursi</h1>
+        <div id="menu">
+            <a href="#tmln" class="scroll">Timeline</a>
+            <a onclick="myFunction()" class="dropbtn">Social</a>
+            <div id="myDropdown" class="dropdown-content">
+                <a target="_blank" href="http://linkedin.com/in/brunabursi">Linkedin</a>
+                <a target="_blank" href="http://github.com/brunabursi">GitHub</a>
+                <a target="_blank" href="http://facebook.com/bruna.bursi">Facebook</a>
+            </div>
+            <a href="#contatos" class="scroll">Contacts</a>
         </div>       
         
     </header>
     <section class="about">
-        <div>
-            <h1>
-                About me 
-            </h1>
-            <p>
-                A bookworm, backpacker and tech nerd. I belive technology has the power to transform people's life and change the world. As I have experienced a huge twist in my life once I started developing softwares I have the urge to spread this knoledge and keep looking up for more.
-                I started to navigate trhu developing area looking for new challenges and was more than satisfied about the path that is openning for me. I'm very focus and want to be the best I can in IT.  
-            </p>
-            
-        </div>        
-        <img src="/static/img/perfil.jpg" alt="Perfil" class="perfil">            
-    </section>
-    
-    <section class="new">
-        <div>
+        <div id="me">
+            <div>
                 <h1>
-                        Whats new?
-                    </h1>
-                    <p>
-                        Bussiness administration student and junior front end developer. 
-                        Fell in love with web developing after beeing aprooved on the "Estação Hack São Paulo from Facebook" program where I had the oportunity to develop projects in HTML5, CSS and Javascript. In the short time I've been developing I did some jobs using the frameworks: Express and React. After the academy I've been teacher auxiliar in a short course by Mastertech in a university in São Paulo. For more infos about my projects please visit my <a href="">GitHub</a> or take a look at my <a href="">Timeline</a>.
-                    </p>
+                    About me 
+                </h1>
+                <p>
+                    A bookworm, backpacker and tech nerd. I belive technology has the power to transform people's life and change the world. As I have experienced a huge twist in my life once I started developing softwares I have the urge to spread this knoledge and keep looking up for more.
+                    I started to navigate trhu developing area looking for new challenges and was more than satisfied about the path that is openning for me. I'm very focus and want to be the best I can in IT.  
+                </p>
+            </div>
+            <img src="/static/img/perfil.jpg" alt="Perfil" class="perfil">                
         </div>
-       <span>  </span>      
+        
+        <div>      
+            <h1>
+                Whats new?
+            </h1>
+            
+            <p>
+                Bussiness administration student and junior front end developer. 
+                Fell in love with web developing after beeing aprooved on the "Estação Hack São Paulo from Facebook" program where I had the oportunity to develop projects in HTML5, CSS and Javascript. In the short time I've been developing I did some jobs using the frameworks: Express and React. After the academy I've been teacher auxiliar in a short course by Mastertech in a university in São Paulo. For more infos about my projects please visit my <a href="https://github.com/brunabursi" target="_blank" >GitHub</a> or take a look at my <a href="">Timeline</a>.
+            </p>
+        </div>
     </section>
     
-    <%-include('./Timeline')%>
-    
+    <div id="tmln">
+        <%- include('Timeline') %>
+    </div>
+        
+    <footer id="contatos" class="parte">
+        <h1>Contact</h1>
+        <p id="cntts">  
+            <a href="tel:+5511972839054">+55 11 972839054</a>
+            <a href="http://facebook.com/bruna.bursi" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="http://linkedin.com/brunabursi" target="_blank" rel="noopener noreferrer">Linkedin</a>
+            <a href="http://github.com/brunabursi">GitHub</a>
+            <a href="mailto:brunabursi@gmail.com">Gmail - Brunabursi@gmail.com</a>
+            <a href="mailto:bruna.bursi@outlook.com">Outlook - Bruna.bursi@outlook.com</a>
+        </p>
+        
+    </footer>
+        
 </body>
 </html>
