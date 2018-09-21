@@ -27,28 +27,3 @@ jQuery(document).ready(function($) {
       $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
  });
 });
-
-// $(document).ready(function() {
-//   let menu = document.querySelector('#menu')
-
-//   var nav = $('#menu');
-  
-//   $(window).scroll(function () {
-//   if ($(this).scrollTop() > 50) {
-//     menu.style.position = 'fixed';
-//     } else {
-//       menu.style.position = 'inherit';
-//   }
-//   });
-//   });
-
-
-
-// document.onscroll = function(){
-//   let menu = document.querySelector('#menu');
-//   var top = window.pageYOffset || document.documentElement.scrollTop
-//   if( top > 300) {
-
-//   } else{   
-//   }
-// }
