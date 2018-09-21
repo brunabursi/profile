@@ -2,6 +2,9 @@
   "name": "brunabursi",
   "version": "1.0.0",
   "description": "This is an online version of my curriculum, for more info pls contact me",
+  "engines": {
+    "node": "10.9.0"
+  },
   "main": "index.js",
   "dependencies": {
     "JSONStream": "^1.3.4",
