@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-app.use('/static', express.static('static'));
 
+app.use('/static', express.static('static'));
+app.use(bodyParser.urlencoded());    
 
 app.set('view engine', 'ejs');
 
