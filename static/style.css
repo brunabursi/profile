@@ -5,6 +5,7 @@ body {
   background-image: url('/static/img/bg.jpg');
   margin: 0;
   background-size: cover;
+  background-attachment: fixed;
   min-height: 100%;
   
 }
